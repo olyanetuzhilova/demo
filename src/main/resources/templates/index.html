@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--suppress ThymeleafVariablesResolveInspection -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org/" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Echo</title>
+    </head>
+    <body>
+        <form action="echo" method="GET">
+            <input name="text" type="text" placeholder="Text">
+            <button type="submit">Send get text</button>
+        </form>
+        <br/>
+        <form action="echo" method="POST">
+            <input name="text" type="text" placeholder="Text">
+            <button type="submit">Send post text</button>
+            <label th:text="${text}"></label>
+        </form>
+    </body>
+</html>
